@@ -93,9 +93,11 @@ Spoic3::Application.routes.draw do
   match "labor_items/add/:id", :to => 'labor_items#new', :as =>'labor_project'
 
   #match "food_inventory_food_item/:id/new", :to => 'food_inventory_food_items#new', :as => 'add_food_inventory_food_item'
+#New registration routes
+  match "registration/:id/register", :to => 'registration#new', :as => 'register_group'
 
+# Old registration routes
   match "move_stage/:id" => 'projects#move_stage', :as =>'project_review'
-
   match "registration/schedule", :to => 'registration#schedule', :as => "registration_schedule"
   match "registration/register", :to => 'registration#register'
   match "registration/:id/update", :to => 'registration#process_payment', :as => 'registration_payment'

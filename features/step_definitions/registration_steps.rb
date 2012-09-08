@@ -1,8 +1,15 @@
+And /^I see the "(.*?)" current section$/ do |arg1|
+  find(".process_step").should have_content(arg1)
+end
 
-When /^I show the please_verify_information page$/ do
+Given /^a liaison in Step (\d+)$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
 
-Then /^I should see the page title "(.*?)"$/ do |arg1|
+When /^I select a group type and click "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+When /^I input youth and counselor values$/ do
   pending # express the regexp above with the code you wish you had
 end

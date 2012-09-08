@@ -19,7 +19,10 @@ Given /^a logged on "(.*?)"$/ do |arg1|
 end
 
 Given /^a valid liaison logon$/ do
-
+  if @current_admin_user
+    visit root_path
+    click_button "Sign Out"
+  end
   @current_admin_user = FactoryGirl.create(:liaison_user)
   @current_admin_user.confirm!
   @email = @current_admin_user.email

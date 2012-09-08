@@ -9,6 +9,7 @@ class Ability
       if liaison then
         can [:edit, :update], Church, :id => liaison.church_id
         can [:read, :edit, :update], Liaison, :id => liaison.id
+        can [:manage], Registration, :liaison_id => liaison.id
       end
       groups = ScheduledGroup.find_all_by_liaison_id(user.liaison_id)
       if groups then
