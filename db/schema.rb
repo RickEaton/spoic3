@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120622050615) do
+ActiveRecord::Schema.define(:version => 20120825225459) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.integer   "resource_id",   :null => false
@@ -91,6 +91,7 @@ ActiveRecord::Schema.define(:version => 20120622050615) do
     t.integer   "user_role_id"
     t.string    "username"
     t.string    "phone"
+    t.boolean   "blocked"
   end
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
