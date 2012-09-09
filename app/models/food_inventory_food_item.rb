@@ -1,19 +1,3 @@
-# == Schema Information
-# Schema version: 20110331025929
-#
-# Table name: food_inventory_food_items
-#
-#  id                :integer         not null, primary key
-#  food_inventory_id :integer
-#  item_id      :integer
-#  quantity          :string(255)
-#  created_at        :datetime
-#  updated_at        :datetime
-#  in_base_units     :decimal(, )
-#  in_inventory      :decimal(, )
-#  average_cost      :decimal(, )
-#
-
 class FoodInventoryFoodItem < ActiveRecord::Base
   attr_accessible :item_id, :quantity, :food_inventory_id, :in_inventory, :average_cost
 

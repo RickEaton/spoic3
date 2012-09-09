@@ -1,14 +1,3 @@
-# == Schema Information
-# Schema version: 20110202025751
-#
-# Table name: food_item_categories
-#
-#  id         :integer         not null, primary key
-#  name       :string(255)
-#  created_at :datetime
-#  updated_at :datetime
-#  position :integer
-#  type_id :integer
 
 #ItemType is the highest level category, i.e. food, tool, material, etc.
 #ItemCategory is a lower-level classification linked to the item_type

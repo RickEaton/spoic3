@@ -1,17 +1,3 @@
-# == Schema Information
-# Schema version: 20110331025929
-#
-# Table name: purchases
-#
-#  id           :integer         not null, primary key
-#  program_id   :integer
-#  vendor_id    :integer
-#  date         :date
-#  purchaser_id :integer
-#  total        :decimal(, )
-#  created_at   :datetime
-#  updated_at   :datetime
-#  tax          :decimal(, )
 
 class Purchase < ActiveRecord::Base
   attr_accessible :vendor_id, :purchaser_id, :date, :total, :tax, :purchase_type, :program_id

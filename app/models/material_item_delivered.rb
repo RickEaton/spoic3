@@ -1,3 +1,4 @@
+
 class MaterialItemDelivered < ActiveRecord::Base
 
   attr_accessible :item_id, :project_id, :quantity, :delivery_date, :delivered_by

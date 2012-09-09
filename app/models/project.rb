@@ -1,3 +1,4 @@
+
 class Project < ActiveRecord::Base
   attr_accessible :name, :beneficiary_name, :address1, :address2, :city, :state,:zip, :description,
       :telephone1, :telephone2, :notes, :estimated_days, :planned_start,

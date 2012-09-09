@@ -1,3 +1,4 @@
+
 class LaborItem < ActiveRecord::Base
   attr_accessible :project_id, :session_id, :recorded_by, :team_name, :team_size, :days_worked
   belongs_to :project

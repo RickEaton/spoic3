@@ -1,3 +1,4 @@
+
 class ProjectType < ActiveRecord::Base
   attr_accessible :name, :description, :project_category_id
   belongs_to :project_category

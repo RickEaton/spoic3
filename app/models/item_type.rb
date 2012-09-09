@@ -1,3 +1,4 @@
+
 #ItemType is the highest level category, i.e. food, tool, material, etc.
 #ItemCategory is a lower-level classification linked to the item_type
 class ItemType < ActiveRecord::Base

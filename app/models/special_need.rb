@@ -1,3 +1,4 @@
+
 class SpecialNeed < ActiveRecord::Base
   attr_accessible :name, :list_priority
 

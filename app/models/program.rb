@@ -1,3 +1,4 @@
+
 class Program < ActiveRecord::Base
   attr_accessible :site_id, :start_date, :end_date, :program_type_id, :active, :name, :short_name
 

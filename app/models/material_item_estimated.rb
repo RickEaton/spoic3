@@ -1,3 +1,4 @@
+
 class MaterialItemEstimated < ActiveRecord::Base
 
   attr_accessible :item_id, :project_id, :quantity

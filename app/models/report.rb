@@ -1,3 +1,4 @@
+
 class Report
 
   def initialize

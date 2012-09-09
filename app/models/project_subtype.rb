@@ -1,3 +1,4 @@
+
 class ProjectSubtype < ActiveRecord::Base
   attr_accessible :name, :compound_name, :project_type_id, :untracked_percentage
   has_many :standard_items

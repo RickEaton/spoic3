@@ -1,3 +1,4 @@
+
 class Item < ActiveRecord::Base
     attr_accessible :name, :default_taxed, :item_category_id, :item_type_id, :base_unit,
                     :program_id, :budget_item_type_id, :description, :untracked, :notes, :default_cost
